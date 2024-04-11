@@ -1,0 +1,255 @@
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+#logo{
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+  #exibir{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  #escopoCard{
+    width: 260px;
+    margin: 8px;
+    border: 4px solid;
+    border-radius: 14px;
+  }
+
+  .linhaCard{
+    background-color: gray;
+    height: 1px; /* ou qualquer altura desejada */
+    width: 100%;
+  }
+
+  .linhaForm{
+    background-color: gray;
+    height: 1px; /* ou qualquer altura desejada */
+    width: 100%;
+  }
+
+  .divCards{
+    margin-top: 5em;
+  }
+
+  .logoFormulario{
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  #divFormulario{
+    border: solid 8px green;
+    border-radius: 8px;
+  }
+
+  #divLista{
+    border: solid 8px gray;
+    border-radius: 8px;
+    margin-top: 3em;
+  }
+
+  #cadastro{
+  margin:2em;
+  }
+
+  .cardProfessor{
+    margin-top: 0;
+    margin-bottom: 5px;
+    
+  }
+
+  .linha-cinza {
+    border: none; /* Remove a borda padrão */
+    height: 1px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha cinza */
+    margin: 20px 0; /* Margem superior e inferior para espaçamento */
+  }
+
+  .letraModal {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    line-height: 1.9; /* Altura da linha para melhor legibilidade */
+    font-size: large;
+    color: #333; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal {
+    display: none; /* Oculta a modal por padrão */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente */
+    overflow: auto;
+  }
+
+/* Estilos para o conteúdo da modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Estilos para o botão de fechar */
+.close {
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para o botão de fechar */
+.closeUpdate {
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeUpdate:hover,
+.closeUpdate:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para o botão Abrir Modal */
+#openModalBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openModalBtn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para o botão Fechar dentro da modal */
+#closeModalBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#closeModalBtnUpdate:hover {
+    background-color: #da190b;
+}
+
+#closeModalBtnUpdate {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#closeModalBtn:hover {
+  background-color: #da190b;
+}
+
+
+.divGrafico{
+  display: block;
+  box-sizing: border-box;
+  height: 350px;
+  width:  350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #04AA6D;;
+}
+
+.footer .container {
+    width: 100%;
+}
+
+.corTextoFooter{
+  color: #f1f1f1;
+  font-size: large;
+  margin-right: 4px;
+}
