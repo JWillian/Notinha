@@ -1,56 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Notinha</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
-  </head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="#">
-  <img src="img/logo2.jpeg" alt="profile Pic" height="75" width="75" id="logo">  
- Notinha</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Configurações</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ajuda</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-  </div>
-</nav>
-
-<!-- The sidebar -->
-<div  class="sidebar">
-  <a  href="{{ url('/home') }}">Home</a>
-  <a  href="{{ url('professores') }}">Professores</a>
-  <a  class="active" href="{{ url('cursos') }}">Cursos</a>
-  <a href="{{ url('graficos') }}">Gráficos</a>
-  <a href="#about">Usuários</a>
-</div>
+@extends('layouts.header')
 
 <!-- Page content -->
+@section('content') 
+
 <div class="content">
-@yield('content')
 
 <label for="mensagem" id="mensagem"></label>    
 
@@ -175,7 +129,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 
-</div>
-   
-</body>
-</html>
+@endsection

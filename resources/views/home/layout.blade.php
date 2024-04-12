@@ -3,21 +3,8 @@
 <!-- Page content -->
 @section('content')
 
-<!-- The sidebar -->
-<div class="sidebar">
-  <a class="active" href="/home">Home</a>
-  <a href="{{ url('professores') }}">Professores</a>
-  <a  href="{{ url('cursos') }}">Cursos</a>
-  <a href="{{ url('graficos') }}">Gráficos</a>
-  <a href="#about">Usuários</a>
-</div>
 
 <div class="content">
-
-<label for="mensagem" id="mensagem"></label>    
-
-<br><br>
-
 
 <div class="container">
         <div class="text-center">
@@ -109,7 +96,7 @@
       
     </div>
 
-
+    <!--
     <footer class="footer mt-5">
     <div class="text-right">
         <span class="corTextoFooter">&copy; {{ date('Y') }} Notinha - 
@@ -120,7 +107,8 @@
         </span>
     </div>
     </footer>
-    
+    -->
+
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>

@@ -1,21 +1,9 @@
 @extends('layouts.header')
 
-
-@section('content')
-
-  <!-- The sidebar -->
-  <div class="sidebar">
-    <a href="/home">Home</a>
-    <a href="{{ url('professores') }}">Professores</a>
-    <a href="{{ url('cursos') }}">Cursos</a>
-    <a href="{{ url('graficos') }}"  class="active">Gráficos</a>
-    <a href="#about">Usuários</a>
-  </div>
 <!-- Page content -->
-<div class="content">
+@section('content') 
 
-  <label for="mensagem" id="mensagem"></label>    
-  <br><br>
+<div class="content">
 
     <h2 class="text-center mb-5">Gráficos</h2>
     <hr>
@@ -34,6 +22,7 @@
 
 </div>
 
+<!--
 <footer class="footer">
     <div class="text-right">
         <span class="corTextoFooter">&copy; {{ date('Y') }} Notinha - 
@@ -44,12 +33,12 @@
         </span>
     </div>
 </footer>
+-->
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
 <script src="{{ asset('js/graficos/script.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-
 
 @endsection
 

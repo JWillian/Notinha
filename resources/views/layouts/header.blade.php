@@ -32,6 +32,18 @@
                             <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ url('professores') }}">Professores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/home') }}">Alunos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('cursos') }}">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('graficos') }}">Gráficos</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/dashboard">Configurações</a>
                         </li>
                         <li class="nav-item">
