@@ -7,6 +7,7 @@ var sexoM          = 0;
 var sexoF          = 0;
 var sexoI          = 0;
 
+
  // Carregar Alunos e Montar os Gráficos
  $.ajax({
     url: '/Aluno',
@@ -15,7 +16,15 @@ var sexoI          = 0;
     $aluno = response;
     console.log(response);
 
+    var faixaEtaria    = [];
+    var nomesAlunos    = [];
+    
+    $.each(response, function(chave, valor) {
+        faixaEtaria.push(valor.idade);
+        nomesAlunos.push(valor.nome);
+    });
 
+    
     $aluno.forEach(function(aluno) {
 
         if(aluno.curso_nome == "ADS"){
@@ -37,8 +46,11 @@ var sexoI          = 0;
         if(aluno.sexo == "INDEFINIDO"){
             sexoI+=1;
         }
+
        
     });
+
+    console.log(faixaEtaria);
     
     // Alunos por Curso
     var ctx = document.getElementById('myChart').getContext('2d');
@@ -63,7 +75,7 @@ var sexoI          = 0;
                     borderWidth: 1
                 }]
             },
-        });
+    });
 
     // Alunos por Sexo
     var ctxChart = document.getElementById('sexo').getContext('2d');
@@ -82,7 +94,25 @@ var sexoI          = 0;
                 hoverOffset: 4
       }]
             }
-        });
+    });
+
+    var array = [3,6,9];
+
+     // Faixa Etária dos Alunos 
+     var faixaChart = document.getElementById('faixaEtaria').getContext('2d');
+     var faixaEtaria    = new Chart(faixaChart, {
+         type: 'line',
+         data: {
+             labels: nomesAlunos,
+             datasets: [{
+                label: 'Idade dos Aluno',
+                data: faixaEtaria,
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+              }]
+         }
+     });
         
   }
 

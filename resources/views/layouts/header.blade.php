@@ -73,6 +73,7 @@
 
     </div>
   
+    @extends('layouts.footer')
 
 </body>
 </html>
