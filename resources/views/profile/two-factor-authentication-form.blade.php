@@ -1,28 +1,29 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Two Factor Authentication') }}
+        Autenticação por 2 fatores.
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Add additional security to your account using two factor authentication.') }}
+        Adicione uma segurança adicional usando 2 fatores pra autenticação.
     </x-slot>
 
     <x-slot name="content">
         <h3 class="text-lg font-medium text-gray-900">
             @if ($this->enabled)
                 @if ($showingConfirmation)
-                    {{ __('Finish enabling two factor authentication.') }}
+                    Termine de habilitar a autenticação em dois fatores.
                 @else
-                    {{ __('You have enabled two factor authentication.') }}
+                Você  habilitou a autenticação em dois fatores.
                 @endif
             @else
-                {{ __('You have not enabled two factor authentication.') }}
+                Você não habilitou a autenticação em dois fatores.
             @endif
         </h3>
 
         <div class="mt-3 max-w-xl text-sm text-gray-600">
             <p>
-                {{ __('When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.') }}
+            Quando a autenticação em dois fatores estiver ativada, você será solicitado a inserir um token seguro e aleatório durante a autenticação. 
+            Você pode obter esse token no aplicativo Google Authenticator do seu telefone.
             </p>
         </div>
 
@@ -80,7 +81,7 @@
             @if (! $this->enabled)
                 <x-confirms-password wire:then="enableTwoFactorAuthentication">
                     <x-button type="button" wire:loading.attr="disabled">
-                        {{ __('Enable') }}
+                        Habilitar
                     </x-button>
                 </x-confirms-password>
             @else
