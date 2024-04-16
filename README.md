@@ -35,7 +35,7 @@ O sistema permite filtros por nome de Alunos, Professores e Cursos.
 
 ## Perfil e Configurações
 
-![configuracoes](https://github.com/JWillian/Notinha/assets/19697488/126dd313-1bb3-47c3-9f9f-b2ba9ff783aa)
+![configuracoes](https://github.com/JWillian/Notinha/assets/19697488/1404eb4d-b0b7-417b-aaeb-726c6799b25a)
 
 ## Diagrama Uml Notinha
 
