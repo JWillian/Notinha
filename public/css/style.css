@@ -1,9 +1,14 @@
 
   
-#logo{
-    border: solid 1px;
-    border-radius: 50%;
-}
+  #logo{
+      border: solid 1px;
+      border-radius: 50%;
+  }
+
+  .fontNavbar{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+  }
 
   #exibir{
       display:flex;
@@ -32,7 +37,8 @@
   }
 
   .divCards{
-    margin-top: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   .logoFormulario{
@@ -41,13 +47,13 @@
   }
 
   #divFormulario{
-    border: solid 8px green;
-    border-radius: 8px;
+    border: solid 15px green;
+    border-radius: 35px;
   }
 
   #divLista{
-    border: solid 8px gray;
-    border-radius: 8px;
+    border: solid 15px gray;
+    border-radius: 35px;
     margin-top: 3em;
   }
 
@@ -215,4 +221,16 @@
   color: #f1f1f1;
   font-size: large;
   margin-right: 4px;
+}
+
+.btnCadastrar{
+  margin-bottom: 40px;
+}
+
+.tituloCurso{
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
 }

@@ -4,7 +4,7 @@
 @section('content') 
 
 <div class="content">
-
+<br><br>
 <div class="container-fluid">
 
     <h2 class="text-center mb-5">Gráficos</h2>

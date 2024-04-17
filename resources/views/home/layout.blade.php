@@ -5,9 +5,9 @@
 
 
 <div class="content">
-
-<div class="container">
-        <div class="text-center">
+<br><br>
+<div class="container" id="divFormulario">
+        <div class="text-center mt-5">
         <img src="{{URL::asset('/img/logo2.jpeg')}}" alt="profile Pic" height="200" width="200" id="logo">
         </div>
         <h1 class="my-4 text-center">Adicione um novo Aluno</h1>
@@ -86,28 +86,18 @@
             </div>
             
         <button type="submit" class="btn btn-success float-right">Cadastrar</button>
+        <br>
         </form>
 
-        <h5>Alunos</h5>
-        <hr class="linhaForm">
-        
-        <div id="exibir" class="divCards">
-        </div>
-      
     </div>
 
-    <!--
-    <footer class="footer mt-5">
-    <div class="text-right">
-        <span class="corTextoFooter">&copy; {{ date('Y') }} Notinha - 
-        <a class="corTextoFooter" href="https://www.linkedin.com/in/jonatas-willian-059923b7/" target="Isaac"> 
-            <i class="fab fa-linkedin"></i>
-            LinkedIn: Isaac
-        </a>
-        </span>
-    </div>
-    </footer>
-    -->
+    <div class="container mt-5" id="divLista">
+    <h2 class="my-4">Alunos</h2>
+        <hr class="linhaForm">
+        <div id="exibir" class="divCards">
+        </div>
+    </div>    
+      
 
     <div id="myModal" class="modal">
       <div class="modal-content">

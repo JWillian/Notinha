@@ -4,15 +4,11 @@
 <!-- Page content -->
 @section('content') 
 
-<div class="content">
-
-<label for="mensagem" id="mensagem"></label>    
-
+<div class="content"> 
 <br><br>
-
 <div class="container">
   <div id="divFormulario">
-        <div class="logoFormulario">
+        <div class="text-center mt-5">
         <img src="img/logo2.jpeg" alt="profile Pic" height="200" width="200" id="logo">
         </div>
         <h1 class="my-4 text-center">Adicione um novo Curso</h1>
@@ -53,28 +49,26 @@
         </form>
         </div>
 
-        <div id="divLista">
-
-        <h2 class="my-4"> 
-          Cursos
-          <div class="float-right mr-4">
-            <div class="form-inline my-2 my-lg-0"> 
-              <input  class="form-control mr-sm-2 " type="text" id="termo_pesquisa" placeholder="Digite o nome do curso">
-              <button class="btn btn-outline-success my-2 my-sm-0" id="btnPesquisar">Pesquisar</button>
-            </div>
-        </div>
-        </h2>
-
-        <hr class="linhaForm">
-        
-        <div id="exibir" class="divCards">
-        </div>
-
-        </div>
-
     </div>
 </div>
 
+<div class="container mt-5" id="divLista">
+  <div class="my-4"> 
+          <span class="tituloCurso">Cursos</span> 
+          <div class="float-right mr-4">
+              <div class="form-inline my-2 my-lg-0"> 
+                <input  class="form-control mr-sm-2 " type="text" id="termo_pesquisa" placeholder="Digite o nome do curso">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="btnPesquisar">Pesquisar</button>
+              </div>
+          </div>
+  </div>    
+
+  <hr class="linhaForm">
+        
+  <div id="exibir" class="divCards">
+  </div>
+
+</div>
 
 <div id="myModal" class="modal">
   <div class="modal-content">

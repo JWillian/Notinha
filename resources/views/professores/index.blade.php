@@ -4,9 +4,9 @@
 @section('content') 
 
 <div class="content">
-
-<div class="container">
-        <div class="text-center">
+<br><br>
+<div class="container" id="divFormulario">
+        <div class="text-center mt-5">
         <img src="img/logo2.jpeg" alt="profile Pic" height="200" width="200" id="logo">
         </div>
         <h1 class="my-4 text-center">Adicione um novo Professor</h1>
@@ -64,18 +64,19 @@
               </select>
             </div>
             
-            <br>
-            
-        <button type="submit" class="btn btn-success float-right mb-5">Cadastrar</button>
-        </form>
-
-        <h5>Professores</h5>
-        <hr class="linhaForm">
-        
-        <div id="exibir" class="divCards">
-        </div>
+        <br>
+        <button type="submit" class="btn btn-success float-right btnCadastrar">Cadastrar</button>
+        <br>  
+      </form>
 
     </div>
+</div>
+
+<div class="container mt-5" id="divLista">
+  <h2 class="my-4">Professores</h2>
+  <hr class="linhaForm">
+  <div id="exibir" class="divCards">
+  </div>
 </div>
 
 <div id="myModal" class="modal">
